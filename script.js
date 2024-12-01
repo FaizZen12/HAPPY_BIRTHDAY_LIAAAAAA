@@ -1,5 +1,5 @@
 const video = document.querySelector('video');
 
 video.addEventListener('ended', () => {
-    alert('Terima kasih telah menonton video ulang tahun kami!');
+    alert('Terima kasih sudaaahh mengklick sampaii akhirr oh iyaa kabarinn yaa pulangnya jam berapaa');
 });
