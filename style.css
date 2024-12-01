@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffeef8; /* Latar belakang pink lembut */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Putih untuk kontras yang baik */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0; /* Awalnya tidak terlihat */
+    transform: translateY(20px); /* Posisi awal */
+    animation: fadeInUp 0.8s forwards; /* Animasi masuk */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #d5006d; /* Warna pink cerah untuk judul */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+h1:hover {
+    transform: scale(1.05); /* Membesar saat hover */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555; /* Warna teks yang lebih lembut */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #d5006d; /* Warna pink cerah untuk tombol */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+.button:hover {
+    background-color: #c7005a; /* Warna pink lebih gelap saat hover */
+    transform: scale(1.05); /* Membesar saat hover */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777; /* Warna teks footer yang lebih lembut */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+.parallax {
+    background-image: url('background-image.jpg'); /* Ganti dengan gambar yang sesuai */
+    height: 300px; /* Tinggi area parallax */
+    background-attachment: fixed; /* Efek parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
